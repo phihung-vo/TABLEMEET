@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="table_meet.SignUpController">
+    <children>
+      <BorderPane prefHeight="0.0" prefWidth="1200.0">
+         <top>
+            <MenuBar prefHeight="32.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Open">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="Import File">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="I" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="Export Video" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleClosePrimaryStage" text="Close">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Turn On Camera" />
+                        <MenuItem mnemonicParsing="false" text="Turn Off Camera" />
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Options">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Check Connections" />
+                        <MenuItem mnemonicParsing="false" text="Settings">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="I" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <AnchorPane prefHeight="650.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="140.0" prefWidth="1268.0">
+                     <children>
+                        <Label layoutX="194.0" layoutY="28.0" text="TableMeet" textFill="#59e141">
+                           <font>
+                              <Font size="60.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="744.0" layoutY="14.0" text="E-Learning &amp; E-Meeting" textFill="#86dd4f">
+                           <font>
+                              <Font size="40.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="744.0" layoutY="89.0" text="The fastest way to solve the problem" textFill="#7ada3b">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="140.0" prefHeight="611.0" prefWidth="1268.0">
+                     <children>
+                        <Label layoutX="84.0" layoutY="43.0" text="Sign Up" textFill="#54a111">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="110.0" layoutY="119.0" prefHeight="0.0" text="Email *">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="110.0" layoutY="216.0" prefHeight="0.0" prefWidth="100.0" text="Password *">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="110.0" layoutY="315.0" prefHeight="10.0" text="Confirm Password *">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="110.0" layoutY="414.0" text="Birthday *">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="787.0" layoutY="119.0" text="First Name *">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="787.0" layoutY="216.0" text="Last Name *">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="787.0" layoutY="315.0" text="Country *">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="787.0" layoutY="414.0" text="Phone No.">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="txtEmail" layoutX="110.0" layoutY="146.0" prefHeight="30.0" prefWidth="350.0" />
+                        <JFXPasswordField fx:id="txtPassword1" layoutX="110.0" layoutY="243.0" prefHeight="30.0" prefWidth="350.0" />
+                        <JFXPasswordField fx:id="txtPassword2" layoutX="110.0" layoutY="342.0" prefHeight="30.0" prefWidth="350.0" />
+                        <JFXDatePicker fx:id="dpkBirthday" layoutX="110.0" layoutY="437.0" prefHeight="30.0" prefWidth="383.0" />
+                        <JFXTextField fx:id="txtFirstName" layoutX="787.0" layoutY="146.0" prefHeight="30.0" prefWidth="350.0" />
+                        <JFXTextField fx:id="txtLastName" layoutX="787.0" layoutY="243.0" prefHeight="30.0" prefWidth="350.0" />
+                        <JFXComboBox fx:id="cbxCountryName" layoutX="787.0" layoutY="342.0" prefHeight="30.0" prefWidth="200.0" />
+                        <JFXComboBox fx:id="cbxCountryCode" layoutX="1001.0" layoutY="342.0" onMouseClicked="#clickCountryCode" prefHeight="31.0" prefWidth="136.0" />
+                        <JFXTextField fx:id="txtPhoneNo" layoutX="787.0" layoutY="441.0" prefHeight="30.0" prefWidth="350.0" />
+                        <JFXButton fx:id="btnSignUp" layoutX="564.0" layoutY="518.0" onAction="#handleSignUp" prefHeight="35.0" prefWidth="140.0" style="-fx-border-color: #54a111;" text="Sign Up" textFill="#54a111" />
+                        <Label fx:id="lbEmailError" alignment="CENTER_RIGHT" layoutX="212.0" layoutY="122.0" prefHeight="21.0" prefWidth="248.0" textFill="#f11616" />
+                        <Label fx:id="lbPassword1Error" alignment="TOP_RIGHT" layoutX="222.0" layoutY="219.0" prefHeight="21.0" prefWidth="238.0" textFill="#f11616" />
+                        <Label fx:id="lbPassword2Error" alignment="CENTER_RIGHT" layoutX="274.0" layoutY="318.0" prefHeight="21.0" prefWidth="186.0" textFill="#f11616" />
+                        <Label fx:id="lbBirthdayError" alignment="CENTER_RIGHT" layoutX="240.0" layoutY="417.0" prefHeight="21.0" prefWidth="220.0" textFill="#f11616" />
+                        <Label fx:id="lbFirstnameError" alignment="CENTER_RIGHT" layoutX="903.0" layoutY="122.0" prefHeight="21.0" prefWidth="234.0" textFill="#f11616" />
+                        <JFXButton fx:id="btnBackSignIn" layoutX="987.0" layoutY="520.0" onAction="#handleBackSignIn" prefHeight="30.0" prefWidth="150.0" text="Back To SIGN IN" textFill="#54a111">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>                        
+                        <Label layoutX="1001.0" layoutY="315.0" text="Country Code *">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="751.0" prefHeight="117.0" prefWidth="1268.0" style="-fx-background-color: #ccc;">
+                     <children>
+                        <Label layoutX="76.0" layoutY="48.0" text="The Product belongs to Team Rớt Môn  |  Copyright 2019 ®" />
+                        <Label layoutX="634.0" layoutY="28.0" text="Contact for Support:" />
+                        <Label layoutX="634.0" layoutY="59.0" text="Email: tablemeet@teamrotmon.com" />
+                        <Label layoutX="634.0" layoutY="80.0" text="Fax:    77556699" />
+                        <ImageView fitHeight="41.0" fitWidth="42.0" layoutX="1128.0" layoutY="39.0" onMouseClicked="#clickFacebook" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/fb-logo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="53.0" fitWidth="42.0" layoutX="1200.0" layoutY="38.0" onMouseClicked="#clickInstagram" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/inst-logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

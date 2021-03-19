@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TABLE_MEET.jnlp">
+  <information>
+    <title>TABLE_MEET</title>
+    <vendor>hungh</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TABLE_MEET.jar" size="6251805" download="eager" />
+    <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib\sqljdbc42.jar" size="782860" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="table_meet.TABLE_MEET"  name="TABLE_MEET" />
+  <update check="always"/>
+</jnlp>
